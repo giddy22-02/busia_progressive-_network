@@ -28,41 +28,47 @@ body {
    [01]. Navbar
 ========================== */
 .navbar {
-    background: #ffffff !important;
+    background-image: linear-gradient(to bottom, #ec7b25, #ee881e, #ef9515, #efa30c, #eeb004, #efb312, #efb61c, #f0b924, #f2b232, #f2ac3d, #f2a647, #f0a150);
     padding: 25px 0;
 }
 
 .navbar .nav-item {
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 600;
     margin: 0 20px;
 }
 
 .navbar .nav-item .nav-link {
-    color: green;
+    color: #ffffff;
+    transition: transform .2s;
 }
 
 .navbar .nav-item .nav-link:hover {
-    color: red;
-}
-.navbar .navbar-nav .dropdown .dropdown-menu {
-    margin-top: 25px;
-    background:#96C8A2;
-}
-
-.navbar .navbar-nav .dropdown span {
-    font-size: 10px;
-    margin-left: 3px;
+    color: #000080;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
-.navbar .navbar-nav .dropdown .dropdown-menu a {
-    font-size: 18px;
-    color: #ffffff;
-    margin-bottom: 10px;
+.navbar ul li a.icon {
+    margin-left: 20px;
+    margin-right: 10px;
 }
 
-.navbar .navbar-nav .dropdown .dropdown-menu a:hover {
-    background: #e0a80d;
+.navbar ul a i {
+    padding: 7px;
+    margin-left: 5px;
+    background-color: #cfecf7;
+    color: #000080;
+    border-radius: 50px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.navbar ul a i:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 
@@ -70,71 +76,102 @@ body {
    [02]. Slider
 ========================== */
 .slider {
-    background: url('../img/bg/slider-bg.jpeg') center center no-repeat;
-    height: calc(100vh - 92px);
+    background: url('../img/home_1.jpg') center center no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
     background-attachment: fixed;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 90px;
+    margin-top: 20px;
 }
 
-.slider .particels {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+
 
 .animated-headlines .cd-headline span {
-    font-size: 50px;
-    font-family: 'Muli', sans-serif !important;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #e0a80d;
+    font-size: 56px;
+    font-family: 'Brush Script MT', cursive !important;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #ffffff;
 }
 
-
 .slider .left-content .hello {
-    font-size: 20px;
+    font-size: 80px;
     font-weight: 300;
+    font-family: 'Brush Script MT', cursive;
     color: #ffffff;
     margin: 0;
     padding: 0;
 }
 
-.slider .left-content h2 {
-    font-size: 16px;
-    font-weight: 600;
-    color: #ffffff;
-    padding: 10px 0;
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
-    display: inline-block;
-    margin: 5px 0 20px 0;
-}
-
-.slider .left-content .paragraph {
-    font-size: 14px;
-    font-weight: 400;
-    color: #ffffff;
-    line-height: 28px;
-    padding-right: 20px;
+.slider .left-content .bpn-name {
+    font-size: 35px;
+    font-weight: 700;
+    color: #FDFF00;
+    margin: 0;
+    padding: 0;
 }
 
 .slider .left-content .btn {
-    border: 2px solid #e0a80d;
-    border-radius: 35px;
-    padding: 10px 30px;
-    font-size: 14px;
-    color: #ffffff;
+    border: none;
+    background: #FDFF00;
+
+    padding: 16px 70px;
+    font-size: 17px;
+    color: #03AC13;
+    font-style: bold;
     font-weight: 500;
-    margin-top: 20px;
+    margin-top: 10px;
     text-decoration: none;
     z-index: 200;
 }
 
+/* ==========================
+   [04]. Our Pillars
+========================== */
+.our_pillars {
+    padding: 45px;
+    background: #cfecf7;
+}
+
+.our_pillars h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #000080;
+    margin-bottom: 60px;
+    padding: 10px;
+}
+
+.our_pillars .box {
+    padding: 40px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to bottom, #ec7b25, #ee881e, #ef9515, #efa30c, #eeb004, #efb312, #efb61c, #f0b924, #f2b232, #f2ac3d, #f2a647, #f0a150);
+    color: #ffffff;
+    transition: transform .2s;
+}
+
+.our_pillars .box:hover {
+    padding: 40px;
+    margin-bottom: 30px;
+    background: #F0A150;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.our_pillars .box span {
+    font-size: 30px;
+    color: #000080;
+    padding: 8px;
+}
+
+.our_pillars .box p {
+    font-size: 14px;
+    color: #000080;
+    font-weight: 600;
+    line-height: 26px;
+    padding: 0;
+    margin: 0;
+}
 
 /* ==========================
    [03]. About Me
@@ -146,13 +183,14 @@ body {
 }
 
 .about-me img {
-    padding-right: 50px;
+    padding: 50px;
 }
 
 .about-me h2 {
     font-size: 30px;
     font-weight: 800;
     color: #e0a80d;
+    padding-top: 50px;
 }
 
 .about-me p {
@@ -206,6 +244,7 @@ body {
     margin-bottom: 30px;
     background: #212222;
 }
+
 .services .box span {
     font-size: 30px;
     color: #e0a80d;
@@ -229,23 +268,20 @@ body {
     margin: 0;
 }
 
-
-
 /* ==========================
-   [05]. Some Facts
+   [03]. Some Facts
 ========================== */
 
 .some-facts {
-    padding: 130px 0;
-    color: #ffffff;
-    background: url('../img/bg/some-facts-bg.jpg') center center no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    padding: 50px;
+    color: #F0A150;
+    background: #cfecf7;
+    font-weight: 700;
 }
 
 .some-facts .items span {
     font-size: 30px;
-    color: #e0a80d;
+    color: #000080;
     margin: 0;
     padding: 0;
 }
@@ -266,7 +302,6 @@ body {
     padding: 0;
     text-transform: uppercase;
 }
-
 
 
 /* ==========================
@@ -318,7 +353,7 @@ body {
     margin-bottom: 30px;
 }
 
-.portfolio .single-portfolio-item .overlay{
+.portfolio .single-portfolio-item .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -336,10 +371,10 @@ body {
     text-decoration: none;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: #ffffff;
     transition: all .3s ease-in-out;
-    
+
 }
 
 .portfolio .single-portfolio-item .overlay .content h3 {
@@ -430,13 +465,13 @@ body {
 }
 
 .testimonials .icon {
-  height: 40px;
-  width: 40px;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  font-size: 30px;
-  background-image: none;
-  color: #ffffff
+    height: 40px;
+    width: 40px;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    font-size: 30px;
+    background-image: none;
+    color: #ffffff
 }
 
 
@@ -516,69 +551,129 @@ body {
 ========================== */
 
 .contact {
+
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
     padding: 0 0 130px 0;
-    background: #2d2e2e;
+
 }
 
 .contact h2 {
     font-size: 30px;
     font-weight: 800;
-    color: #e0a80d;
-    margin-bottom: 60px;
+    color: #000080;
+    margin: 20px;
 }
 
 .contact .form-control {
     padding: 25px;
     font-size: 13px;
-    margin-bottom: 10px;
-    background: #fcf2f2;
-    border: 0;
-    border-radius: 10px;
+    margin: 5px;
+    border: none;
+    background: #cfecf7;
+    width: 100%;
+
 }
+
 
 .contact button.btn {
     padding: 10px;
-    border-radius: 10px;
     font-size: 15px;
-    background: #e0a80d;
-    color: #ffffff;
+    background: #cfecf7;
+    color: #000080;
+
 }
+
 .contact .info {
     padding-left: 40px;
 }
 
 .contact .info span {
     font-size: 20px;
-    color: #e0a80d;
+    color: #ee881e;
 }
 
 .contact .info p {
     font-size: 14px;
     margin: 10px 0 20px 0;
-    color: #eee;
+    color: #000080;
 }
 
 
 /* ==========================
    [10]. Footer
 ========================== */
-.footer {
+.footer-section {
     padding: 40px 0;
-    background: #242527;
+    background-image: linear-gradient(to bottom, #ec7b25, #ee881e, #ef9515, #efa30c, #eeb004, #efb312, #efb61c, #f0b924, #f2b232, #f2ac3d, #f2a647, #f0a150);
 }
 
- .footer .social-icons span{
-    color: #e0a80d;
-    padding: 0 5px;
-}
-
-.footer p {
+.footer-section .container h3 {
     color: #ffffff;
-    font-size: 14px;
-    font-weight: 300;
-    margin: 0;
-    margin-top: 15px;
+    font-size: 22px;
 }
+
+.footer-section .container p {
+    color: #000080;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.footer-section .container li,
+i,
+a {
+    list-style: none;
+    padding: 5px;
+    color: #000080;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.footer-section .container .subscribe input[type="text"] {
+    width: 75%;
+    height: 35px;
+    background: #ffffff;
+    border: none;
+}
+
+.footer-section .container .subscribe input[type="button"] {
+    padding: 9px;
+    background: #000080;
+    color: #ffffff;
+    font-size: 12px;
+    border: none;
+}
+
+/* ==========================
+   [11]. Copyright
+========================== */
+.copyright {
+    background: #ee881e;
+}
+
+.copyright .container>.social-icons>span {
+    color: #ffffff;
+    padding: 5px;
+    margin: 10px;
+    font-size: 20px;
+    background: #000080;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.copyright .container p>a {
+    color: #ffffff;
+}
+
+.copyright .container .social-icons span:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
 
 
 /* ==========================
@@ -586,6 +681,7 @@ body {
 ========================== */
 /*Small devices (landscape phones, 576px and up) */
 @media (max-width: 575.99px) {
+
     /* Slider*/
     .slider {
         height: calc(100vh - 80px);
@@ -608,9 +704,11 @@ body {
     .about-me {
         padding: 130px 25px;
     }
+
     .about-me img {
         margin-bottom: 30px;
     }
+
     .about-me .btn-1 {
         margin-bottom: 30px;
     }
@@ -633,11 +731,11 @@ body {
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
 
-     /* Slider*/
-     .slider {
+    /* Slider*/
+    .slider {
         height: calc(100vh - 80px);
         margin-top: 80px;
-     }
+    }
 
     .slider .left-content {
         padding: 0;
@@ -698,5 +796,4 @@ body {
 
 
 /* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
-}
+@media (max-width: 1199.98px) {}

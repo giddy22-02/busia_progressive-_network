@@ -23,7 +23,115 @@ body {
     font-family: 'Muli', sans-serif;
     height: 5000px;
 }
+.preloader {
+    background-image: linear-gradient(to bottom, #ec7b25, #ee881e, #ef9515, #efa30c, #eeb004, #efb312, #efb61c, #f0b924, #f2b232, #f2ac3d, #f2a647, #f0a150);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s;
+    margin: 0 auto;
+}
 
+/* line 627, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_common.scss */
+.preloader .preloader-circle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-top-color: #ee881e;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    z-index: 10;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
+    box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
+    background-color: #cfecf7;
+    -webkit-animation: zoom 2000ms infinite ease;
+    animation: zoom 2000ms infinite ease;
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s;
+}
+
+/* line 649, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_common.scss */
+.preloader .preloader-circle2 {
+    border-top-color: #0078ff;
+}
+
+/* line 652, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_common.scss */
+.preloader .preloader-img {
+    position: absolute;
+    top: 50%;
+    z-index: 200;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-top: 6px;
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s;
+}
+
+/* line 670, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_common.scss */
+.preloader .preloader-img img {
+    max-width: 55px;
+}
+
+/* line 673, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_common.scss */
+.preloader .pere-text strong {
+    font-weight: 800;
+    color: #dca73a;
+    text-transform: uppercase;
+}
+@-webkit-keyframes zoom {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .6s;
+        -o-transition: .6s;
+        transition: .6s;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: .6s;
+        -o-transition: .6s;
+        transition: .6s;
+    }
+}
+
+@keyframes zoom {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .6s;
+        -o-transition: .6s;
+        transition: .6s;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: .6s;
+        -o-transition: .6s;
+        transition: .6s;
+    }
+}
 /* ==========================
    [01]. Navbar
 ========================== */
@@ -179,7 +287,7 @@ body {
 
 .about-me {
     padding: 130px 0;
-    background: #2d2e2e;
+    background: #cfecf7;
 }
 
 .about-me img {
@@ -189,14 +297,14 @@ body {
 .about-me h2 {
     font-size: 30px;
     font-weight: 800;
-    color: #e0a80d;
+    color: #ee881e;
     padding-top: 50px;
 }
 
 .about-me p {
     font-size: 15px;
     font-weight: 400;
-    color: #bac8d3;
+    color: black;
     line-height: 28px;
     margin: 20px 0 40px 0;
 }
@@ -482,6 +590,7 @@ body {
 .blog {
     padding: 130px 0;
     background: #2d2e2e;
+    color: #ffffff;
 }
 
 .blog h2 {
@@ -493,7 +602,7 @@ body {
 
 .blog .box {
     border-radius: 10px;
-    background: #212222;
+    background-image: linear-gradient(to bottom, #ec7b25, #ee881e, #ef9515, #efa30c, #eeb004, #efb312, #efb61c, #f0b924, #f2b232, #f2ac3d, #f2a647, #f0a150);;
 }
 
 .blog .box .image {

@@ -130,7 +130,7 @@ body {
 ========================== */
 .our_pillars {
     padding: 45px;
-    background: #cfecf7;
+    background: #ffffff;
 }
 
 .our_pillars h2 {
@@ -208,26 +208,28 @@ body {
 ========================== */
 .services {
     padding: 130px 0 95px 0;
-    background-image: linear-gradient(to bottom, #ec7b25, #ee881e, #ef9515, #efa30c, #eeb004, #efb312, #efb61c, #f0b924, #f2b232, #f2ac3d, #f2a647, #f0a150);
+    background: #cfecf7;
+     
 }
 
 .services h2 {
     font-size: 30px;
     font-weight: 800;
-    color: #e0a80d;
+    color: #ee881e;
     margin-bottom: 30px;
     
 }
 
 .services .box {
     padding: 40px;
+    height: 450px;
     margin-bottom: 30px;
-    background: #212222;
+    background: #A9A9A9;
 }
 
 .services .box span {
     font-size: 30px;
-    color: #e0a80d;
+    color: #ee881e;
 }
 
 .services .box h3 {
@@ -239,7 +241,7 @@ body {
     margin: 20px 0;
 }
 
-.services .box p {
+.services .box ul li {
     font-size: 14px;
     color: #bac8d3;
     font-weight: 400;
@@ -254,8 +256,8 @@ body {
 
 .some-facts {
     padding: 50px;
-    color: #F0A150;
-    background: #cfecf7;
+    color: #ee881e;
+    
     font-weight: 700;
 }
 
@@ -290,13 +292,13 @@ body {
 
 .portfolio {
     padding: 130px 0 95px 0;
-    background: #ffffff;
+    background: #cfecf7;
 }
 
 .portfolio h2 {
     font-size: 30px;
     font-weight: 800;
-    color: #e0a80d;
+    color: #ee881e;
     margin-bottom: 60px;
 }
 
@@ -310,7 +312,7 @@ body {
     font-size: 15px;
     font-weight: 600;
     margin-right: 10px;
-    color: #bac8d3;
+    color: #000080;
     text-transform: uppercase;
     cursor: pointer;
     padding: 10px 20px;
@@ -320,12 +322,12 @@ body {
 
 .portfolio .button-group button:hover {
     color: #ffffff;
-    background: #e0a80d;
+    background: #ee881e;
 }
 
 .portfolio .button-group button.active {
     color: #ffffff;
-    background: #e0a80d;
+    background: #ee881e;
 }
 
 .portfolio .single-portfolio-item {
@@ -339,7 +341,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: #e0a80d;
+    background: #ee881e;
     color: #ffffff;
     opacity: 0;
     transition: all .7s ease-in-out;
@@ -385,7 +387,7 @@ body {
 
 .contact {
     padding: 130px 0 95px 0;
-    background: #cfecf7;
+    background: #D3D3D3;
 
 }
 

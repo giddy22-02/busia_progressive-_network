@@ -23,115 +23,7 @@ body {
     font-family: 'Muli', sans-serif;
     height: 5000px;
 }
-.preloader {
-    background-image: linear-gradient(to bottom, #ec7b25, #ee881e, #ef9515, #efa30c, #eeb004, #efb312, #efb61c, #f0b924, #f2b232, #f2ac3d, #f2a647, #f0a150);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 999999;
-    -webkit-transition: .6s;
-    -o-transition: .6s;
-    transition: .6s;
-    margin: 0 auto;
-}
 
-/* line 627, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_common.scss */
-.preloader .preloader-circle {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    border-style: solid;
-    border-width: 1px;
-    border-top-color: #ee881e;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    border-right-color: transparent;
-    z-index: 10;
-    border-radius: 50%;
-    -webkit-box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
-    box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
-    background-color: #cfecf7;
-    -webkit-animation: zoom 2000ms infinite ease;
-    animation: zoom 2000ms infinite ease;
-    -webkit-transition: .6s;
-    -o-transition: .6s;
-    transition: .6s;
-}
-
-/* line 649, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_common.scss */
-.preloader .preloader-circle2 {
-    border-top-color: #0078ff;
-}
-
-/* line 652, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_common.scss */
-.preloader .preloader-img {
-    position: absolute;
-    top: 50%;
-    z-index: 200;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    text-align: center;
-    display: inline-block;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding-top: 6px;
-    -webkit-transition: .6s;
-    -o-transition: .6s;
-    transition: .6s;
-}
-
-/* line 670, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_common.scss */
-.preloader .preloader-img img {
-    max-width: 55px;
-}
-
-/* line 673, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_common.scss */
-.preloader .pere-text strong {
-    font-weight: 800;
-    color: #dca73a;
-    text-transform: uppercase;
-}
-@-webkit-keyframes zoom {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transition: .6s;
-        -o-transition: .6s;
-        transition: .6s;
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-        -webkit-transition: .6s;
-        -o-transition: .6s;
-        transition: .6s;
-    }
-}
-
-@keyframes zoom {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transition: .6s;
-        -o-transition: .6s;
-        transition: .6s;
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-        -webkit-transition: .6s;
-        -o-transition: .6s;
-        transition: .6s;
-    }
-}
 /* ==========================
    [01]. Navbar
 ========================== */
@@ -285,23 +177,21 @@ body {
    [03]. About Me
 ========================== */
 
-.about-me {
-    padding: 130px 0;
+.about-us {
+    padding: 135px 0;
     background: #cfecf7;
 }
 
-.about-me img {
-    padding: 50px;
-}
 
-.about-me h2 {
+
+.about-us h2 {
     font-size: 30px;
     font-weight: 800;
     color: #ee881e;
-    padding-top: 50px;
+   
 }
 
-.about-me p {
+.about-us p {
     font-size: 15px;
     font-weight: 400;
     color: black;
@@ -309,26 +199,7 @@ body {
     margin: 20px 0 40px 0;
 }
 
-.about-me .btn-1 {
-    background: #e0a80d;
-    border-radius: 35px;
-    padding: 10px 30px;
-    font-size: 14px;
-    color: #ffffff;
-    font-weight: 500;
-    margin-right: 10px;
-    text-decoration: none;
-}
 
-.about-me .btn-2 {
-    border: 2px solid #e0a80d;
-    border-radius: 35px;
-    padding: 10px 50px;
-    font-size: 14px;
-    color: #ffffff;
-    font-weight: 500;
-    text-decoration: none;
-}
 
 
 
@@ -336,15 +207,16 @@ body {
    [04]. Services
 ========================== */
 .services {
-    padding-bottom: 90px;
-    background: #2d2e2e;
+    padding: 130px 0 95px 0;
+    background-image: linear-gradient(to bottom, #ec7b25, #ee881e, #ef9515, #efa30c, #eeb004, #efb312, #efb61c, #f0b924, #f2b232, #f2ac3d, #f2a647, #f0a150);
 }
 
 .services h2 {
     font-size: 30px;
     font-weight: 800;
     color: #e0a80d;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    
 }
 
 .services .box {
@@ -418,7 +290,7 @@ body {
 
 .portfolio {
     padding: 130px 0 95px 0;
-    background: #2d2e2e;
+    background: #ffffff;
 }
 
 .portfolio h2 {
@@ -506,165 +378,14 @@ body {
 }
 
 
-/* ==========================
-   [07]. Testimonials
-========================== */
-.testimonials {
-    background: url('../img/bg/pexels-life-of-pix-7974.jpg') center center no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 130px 0 170px 0;
-}
-
-.testimonials h2 {
-    font-size: 30px;
-    font-weight: 800;
-    color: #e0a80d;
-}
-
-/* Image */
-.testimonials .carousel-inner .carousel-item .colon {
-    margin: 30px 0 20px 0;
-}
-
-.testimonials .carousel-inner .carousel-item .team {
-    width: 100px;
-    height: 100px;
-    border: 2px solid #e0a80d;
-    border-radius: 100%;
-    padding: 5px;
-    margin: 20px 0 15px;
-}
-
-.testimonials .carousel-inner .carousel-item h3 {
-    font-size: 20px;
-    color: #ffffff;
-    font-weight: 600;
-}
-
-.testimonials .carousel-inner .carousel-item h4 {
-    font-size: 14px;
-    font-weight: 300;
-    color: #e0a80d;
-    margin-bottom: 20px;
-}
-
-.testimonials .carousel-inner .carousel-item p {
-    font-size: 15px;
-    line-height: 26px;
-    font-weight: 400;
-    color: #ffffff;
-}
-
-.testimonials .carousel-indicators {
-    bottom: -40px;
-}
-
-.testimonials .carousel-indicators li {
-    background-color: #b8b7b7;
-    border-radius: 30px;
-    height: 4px;
-    width: 40px;
-}
-
-
-.testimonials .carousel-indicators .active {
-    background-color: #ffffff;
-}
-
-.testimonials .icon {
-    height: 40px;
-    width: 40px;
-    background-size: 100%, 100%;
-    border-radius: 50%;
-    font-size: 30px;
-    background-image: none;
-    color: #ffffff
-}
-
-
-/* ==========================
-   [08]. Blog
-========================== */
-
-.blog {
-    padding: 130px 0;
-    background: #2d2e2e;
-    color: #ffffff;
-}
-
-.blog h2 {
-    font-size: 30px;
-    font-weight: 800;
-    color: #e0a80d;
-    margin-bottom: 60px;
-}
-
-.blog .box {
-    border-radius: 10px;
-    background-image: linear-gradient(to bottom, #ec7b25, #ee881e, #ef9515, #efa30c, #eeb004, #efb312, #efb61c, #f0b924, #f2b232, #f2ac3d, #f2a647, #f0a150);;
-}
-
-.blog .box .image {
-    position: relative;
-}
-
-.blog .box .image img {
-    width: 100%;
-}
-
-.blog .box .image a {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    padding: 5px 20px;
-    color: #ffffff;
-    background: #e0a80d;
-    border-radius: 35px;
-    font-size: 13px;
-    text-decoration: none;
-}
-
-.blog .box .text {
-    padding: 25px;
-}
-
-.blog .box h3 a {
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: 700;
-    color: #eee;
-    margin-bottom: 25px;
-    margin-top: 30px;
-    text-decoration: none;
-}
-
-.blog .box h4 {
-    font-size: 13px;
-    font-weight: 300;
-    color: #e0a80d;
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-
-.blog .box p {
-    font-size: 14px;
-    font-weight: 400;
-    color: #bdbfc0;
-    line-height: 26px;
-}
-
 
 /* ==========================
    [09]. Contact
 ========================== */
 
 .contact {
-
-    background-size: cover;
-    background-attachment: fixed;
-    align-items: center;
-    padding: 0 0 130px 0;
+    padding: 130px 0 95px 0;
+    background: #cfecf7;
 
 }
 
@@ -680,7 +401,7 @@ body {
     font-size: 13px;
     margin: 5px;
     border: none;
-    background: #cfecf7;
+    background: #ffffff;
     width: 100%;
 
 }
@@ -689,7 +410,7 @@ body {
 .contact button.btn {
     padding: 10px;
     font-size: 15px;
-    background: #cfecf7;
+    background: #ffffff;
     color: #000080;
 
 }

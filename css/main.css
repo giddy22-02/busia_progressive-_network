@@ -22,6 +22,8 @@ Table of contents
 body {
     font-family: 'Muli', sans-serif;
     height: 5000px;
+    padding: 0;
+    margin: 0;
 }
 
 /* ==========================
@@ -84,8 +86,6 @@ body {
     margin-top: 20px;
 }
 
-
-
 .animated-headlines .cd-headline span {
     font-size: 56px;
     font-family: 'Brush Script MT', cursive !important;
@@ -114,15 +114,39 @@ body {
 .slider .left-content .btn {
     border: none;
     background: #FDFF00;
-
     padding: 16px 70px;
     font-size: 17px;
     color: #03AC13;
     font-style: bold;
-    font-weight: 500;
     margin-top: 10px;
     text-decoration: none;
     z-index: 200;
+}
+
+/* ==========================
+   [03]. About Us
+========================== */
+
+.about-us {
+    padding: 135px 0;
+    background: #cfecf7;
+}
+
+
+
+.about-us h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #ee881e;
+
+}
+
+.about-us p {
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    line-height: 28px;
+    margin: 20px 0 40px 0;
 }
 
 /* ==========================
@@ -174,62 +198,30 @@ body {
 }
 
 /* ==========================
-   [03]. About Me
+   [04]. Our Work
 ========================== */
-
-.about-us {
-    padding: 135px 0;
-    background: #cfecf7;
-}
-
-
-
-.about-us h2 {
-    font-size: 30px;
-    font-weight: 800;
-    color: #ee881e;
-   
-}
-
-.about-us p {
-    font-size: 15px;
-    font-weight: 400;
-    color: black;
-    line-height: 28px;
-    margin: 20px 0 40px 0;
-}
-
-
-
-
-
-/* ==========================
-   [04]. Services
-========================== */
-.services {
+.our_work {
     padding: 130px 0 95px 0;
     background: #cfecf7;
-     
+
 }
 
-.services h2 {
+.our_work h2 {
     font-size: 30px;
     font-weight: 800;
     color: #ee881e;
     margin-bottom: 30px;
-    
+
 }
 
-.services .box {
+.our_work .box {
     padding: 40px;
     height: 450px;
     margin-bottom: 30px;
     background: #D3D3D3;
 }
 
-
-
-.services .box h3 {
+.our_work .box h3 {
     font-size: 18px;
     font-weight: 700;
     color: #ee881e;
@@ -238,9 +230,9 @@ body {
     margin: 20px 0;
 }
 
-.services .box ul li {
+.our_work .box ul li {
     font-size: 14px;
-    color:#000080;
+    color: #000080;
     font-weight: 400;
     line-height: 26px;
     padding: 0;
@@ -248,13 +240,13 @@ body {
 }
 
 /* ==========================
-   [03]. Some Facts
+   [05]. Some Facts
 ========================== */
 
 .some-facts {
     padding: 50px;
     color: #ee881e;
-    
+
     font-weight: 700;
 }
 
@@ -284,26 +276,26 @@ body {
 
 
 /* ==========================
-   [06]. Portfolio
+   [06]. Gallery
 ========================== */
 
-.portfolio {
+.gallery {
     padding: 130px 0 95px 0;
     background: #cfecf7;
 }
 
-.portfolio h2 {
+.gallery h2 {
     font-size: 30px;
     font-weight: 800;
     color: #ee881e;
     margin-bottom: 60px;
 }
 
-.portfolio .button-group {
+.gallery .button-group {
     margin-bottom: 30px;
 }
 
-.portfolio .button-group button {
+.gallery .button-group button {
     border: 0;
     background: transparent;
     font-size: 15px;
@@ -317,22 +309,22 @@ body {
     transition: all .2s ease-in-out;
 }
 
-.portfolio .button-group button:hover {
+.gallery .button-group button:hover {
     color: #ffffff;
     background: #ee881e;
 }
 
-.portfolio .button-group button.active {
+.gallery .button-group button.active {
     color: #ffffff;
     background: #ee881e;
 }
 
-.portfolio .single-portfolio-item {
+.gallery .single-portfolio-item {
     position: relative;
     margin-bottom: 30px;
 }
 
-.portfolio .single-portfolio-item .overlay {
+.gallery .single-portfolio-item .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -344,7 +336,7 @@ body {
     transition: all .7s ease-in-out;
 }
 
-.portfolio .single-portfolio-item .overlay .content {
+.gallery .single-portfolio-item .overlay .content {
     font-size: 20px;
     position: absolute;
     text-decoration: none;
@@ -356,27 +348,25 @@ body {
 
 }
 
-.portfolio .single-portfolio-item .overlay .content h3 {
+.gallery .single-portfolio-item .overlay .content h3 {
     font-size: 18px;
     font-weight: 500;
 }
 
-.portfolio .single-portfolio-item .overlay .content p {
+.gallery .single-portfolio-item .overlay .content p {
     font-size: 14px;
     font-weight: 200;
 }
 
-.portfolio .single-portfolio-item .overlay .content a {
+.gallery .single-portfolio-item .overlay .content a {
     color: #ffffff;
     text-decoration: none;
     font-size: 20px;
 }
 
-.portfolio .single-portfolio-item:hover .overlay {
+.gallery .single-portfolio-item:hover .overlay {
     opacity: .95;
 }
-
-
 
 /* ==========================
    [09]. Contact
@@ -407,10 +397,13 @@ body {
 
 
 .contact button.btn {
-    padding: 10px;
-    font-size: 15px;
-    background: #ffffff;
-    color: #000080;
+    padding: 15px;
+    font-size: 18px;
+    margin: 5px;
+    border: none;
+    background: #000080;
+    color: #ffffff;
+    width: 100%;
 
 }
 
@@ -468,6 +461,7 @@ a {
 }
 
 .footer-section .container .subscribe input[type="button"] {
+    width: calc(100%- 75%);
     padding: 9px;
     background: #000080;
     color: #ffffff;

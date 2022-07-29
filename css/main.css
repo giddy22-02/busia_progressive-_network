@@ -296,7 +296,7 @@ body {
 }
 
 .gallery .button-group button {
-    border: 0;
+    border:none;
     background: transparent;
     font-size: 15px;
     font-weight: 600;
@@ -312,11 +312,13 @@ body {
 .gallery .button-group button:hover {
     color: #ffffff;
     background: #ee881e;
+    border: none;
 }
 
 .gallery .button-group button.active {
     color: #ffffff;
     background: #ee881e;
+    border: none;
 }
 
 .gallery .single-portfolio-item {
@@ -331,6 +333,7 @@ body {
     width: 100%;
     height: 100%;
     background: #ee881e;
+    border:none;
     color: #ffffff;
     opacity: 0;
     transition: all .7s ease-in-out;
